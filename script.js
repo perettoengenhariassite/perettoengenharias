@@ -130,8 +130,8 @@
     { src:'assets/trabalho-projeto-residencial.webp', title:'Projeto residencial em 3D', alt:'Perspectiva tridimensional de residência com telhado de telhas cerâmicas e muro frontal' },
     { src:'assets/trabalho-area-industrial.webp', title:'Atuação em instalações industriais', alt:'Galpão industrial, área operacional com cones e materiais armazenados' },
     { src:'assets/trabalho-acompanhamento-obra.webp', title:'Registro de obra em execução', alt:'Obra em alvenaria com pilares e equipe em campo' },
-    { src:'assets/trabalho-regularizacao-curia.jpg', title:'Regularizações', alt:'Galpão industrial, área operacional com cones e materiais armazenados' },
-    { src:'assets/trabalho-treinamentos.jfif', title:'Treinamentos', alt:'Galpão industrial, área operacional com cones e materiais armazenados' },
+    { src:'assets/trabalho-regularizacao-curia.jpg', title:'Projeto 3D regularização cúria diocesana de Três Lagoas', alt:'Galpão industrial, área operacional com cones e materiais armazenados' },
+    { src:'assets/trabalho-treinamentos.jfif', title:'Registro de treinamentos dados pela empresa', alt:'Galpão industrial, área operacional com cones e materiais armazenados' },
     { src:'assets/trabalho-obra.jfif', title:'Registro de estrutura sendo confeccionada', alt:'Obra em alvenaria com pilares e equipe em campo' },
   ];
   let galleryIndex = 0;
@@ -141,7 +141,7 @@
     document.getElementById('gallery-image').src = item.src;
     document.getElementById('gallery-image').alt = item.alt;
     document.getElementById('gallery-caption').textContent = item.title;
-    document.getElementById('gallery-counter').textContent = `${String(galleryIndex + 1).padStart(2, '0')} / 05`;
+    document.getElementById('gallery-counter').textContent = `${String(galleryIndex + 1).padStart(2, '0')} / 06`;
   }
   document.querySelectorAll('[data-gallery-index]').forEach(button => button.addEventListener('click', () => {
     showGalleryImage(Number(button.dataset.galleryIndex));
