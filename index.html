@@ -52,7 +52,7 @@
         <span class="brand-wordmark"><strong>PERETTO</strong><small>ENGENHARIA</small></span>
       </a>
       <nav class="main-nav" id="main-nav" aria-label="Menu principal">
-        <a href="#servicos">Serviços</a><a href="#especialidades">Especialidades</a><a href="#sobre">A empresa</a><a href="#portfolio">Portfólio</a><a href="#contato">Contato</a>
+        <a href="#servicos">Serviços</a><a href="#especialidades">Especialidades</a><a href="#sobre">A empresa</a><a href="#trabalhos">Trabalhos realizados</a><a href="#portfolio">Portfólio</a><a href="#contato">Contato</a>
       </nav>
       <a class="btn btn-primary nav-cta" href="#contato">Solicitar orçamento <svg class="icon"><use href="#i-arrow-up-right"></use></svg></a>
       <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="main-nav" aria-expanded="false"><svg class="icon icon-menu"><use href="#i-menu"></use></svg><svg class="icon icon-close"><use href="#i-close"></use></svg></button>
@@ -131,6 +131,53 @@
 
     <section class="process-section" id="processo"><div class="container"><div class="process-heading reveal"><span class="kicker">/ COMO TRABALHAMOS</span><h2>Um processo simples.<br><em>Uma entrega consistente.</em></h2></div><div class="process-grid"><div class="process-item reveal"><span class="process-number">01</span><div class="process-rule"></div><h3>Entendimento</h3><p>Ouvimos sua necessidade e avaliamos o contexto do serviço.</p></div><div class="process-item reveal"><span class="process-number">02</span><div class="process-rule"></div><h3>Diagnóstico</h3><p>Identificamos condições, requisitos e riscos relevantes.</p></div><div class="process-item reveal"><span class="process-number">03</span><div class="process-rule"></div><h3>Proposta técnica</h3><p>Definimos escopo, entregáveis, prazo e responsabilidades.</p></div><div class="process-item reveal"><span class="process-number">04</span><div class="process-rule"></div><h3>Desenvolvimento</h3><p>Executamos as etapas contratadas e formalizamos a entrega.</p></div></div></div></section>
 
+
+    <section class="section works-section" id="trabalhos" aria-labelledby="works-title">
+      <div class="container">
+        <div class="section-heading works-heading reveal">
+          <div>
+            <span class="kicker">/ NOSSA EXPERIÊNCIA NA PRÁTICA</span>
+            <h2 id="works-title">Trabalhos <em>realizados.</em></h2>
+          </div>
+          <p>Conheça registros de projetos e atividades em engenharia civil, obras e ambientes industriais.</p>
+        </div>
+        <div class="works-grid">
+          <article class="work-card reveal">
+            <button class="work-photo" type="button" data-gallery-index="0" aria-label="Ampliar imagem do projeto residencial">
+              <img src="assets/trabalho-projeto-residencial.webp" alt="Perspectiva 3D de residência com telhado de duas águas, muro frontal e garagem" loading="lazy" decoding="async" width="1272" height="673">
+              <span class="work-zoom" aria-hidden="true">VER IMAGEM <span>↗</span></span>
+            </button>
+            <div class="work-details"><span class="work-number">01 / ENGENHARIA CIVIL</span><h3>Projeto residencial em 3D</h3><p>Visualização arquitetônica de residência com detalhamento volumétrico e cobertura.</p></div>
+          </article>
+          <article class="work-card reveal">
+            <button class="work-photo" type="button" data-gallery-index="1" aria-label="Ampliar imagem da obra em alvenaria">
+              <img src="assets/trabalho-acompanhamento-obra.webp" alt="Registro de obra em andamento, com paredes de alvenaria de tijolos cerâmicos e armações de pilares" loading="lazy" decoding="async" width="1152" height="721">
+              <span class="work-zoom" aria-hidden="true">VER IMAGEM <span>↗</span></span>
+            </button>
+            <div class="work-details"><span class="work-number">02 / OBRAS E EDIFICAÇÕES</span><h3>Registro de obra em execução</h3><p>Acompanhamento em campo de estrutura e alvenaria durante a construção.</p></div>
+          </article>
+          <article class="work-card reveal">
+            <button class="work-photo" type="button" data-gallery-index="2" aria-label="Ampliar imagem de instalação industrial">
+              <img src="assets/trabalho-area-industrial.webp" alt="Interior de galpão industrial com estrutura metálica, materiais armazenados e área delimitada por cones" loading="lazy" decoding="async" width="1280" height="720">
+              <span class="work-zoom" aria-hidden="true">VER IMAGEM <span>↗</span></span>
+            </button>
+            <div class="work-details"><span class="work-number">03 / AMBIENTE INDUSTRIAL</span><h3>Atuação em instalações industriais</h3><p>Registro de área operacional e infraestrutura em ambiente industrial.</p></div>
+          </article>
+        </div>
+        <div class="works-bottom reveal">
+          <span><span class="works-bottom-line"></span> SOLUÇÕES PERSONALIZADAS PARA CADA NECESSIDADE</span>
+          <a href="#contato" class="text-link">Solicite um orçamento <svg class="icon"><use href="#i-arrow-up-right"></use></svg></a>
+        </div>
+      </div>
+    </section>
+    <dialog class="gallery-dialog" id="gallery-dialog" aria-label="Visualização ampliada dos trabalhos realizados">
+      <div class="gallery-lightbox">
+        <div class="gallery-lightbox-head"><span id="gallery-counter">01 / 03</span><button class="gallery-close" type="button" aria-label="Fechar imagem">×</button></div>
+        <div class="gallery-media"><button class="gallery-arrow gallery-prev" type="button" aria-label="Imagem anterior">‹</button><img id="gallery-image" src="assets/trabalho-projeto-residencial.webp" alt=""><button class="gallery-arrow gallery-next" type="button" aria-label="Próxima imagem">›</button></div>
+        <p id="gallery-caption">Projeto residencial em 3D</p>
+      </div>
+    </dialog>
+
     <section class="section portfolio-section" id="portfolio">
       <div class="container"><div class="section-heading reveal"><div><span class="kicker">/ MATERIAIS INSTITUCIONAIS</span><h2>Conheça melhor <em>nossa atuação.</em></h2></div><p>Explore nossas áreas de atuação e os tipos de soluções que podemos desenvolver para sua empresa.</p></div>
       <div class="portfolio-grid">
@@ -143,7 +190,7 @@
 
     <section class="contact-section" id="contato"><div class="container contact-grid"><div class="contact-info reveal"><span class="kicker kicker-light">/ FALE COM A NOSSA EQUIPE</span><h2>Seu próximo projeto começa com uma <em>boa conversa.</em></h2><p>Conte o que sua empresa precisa. Vamos entender o cenário e avaliar a melhor forma de atendimento.</p><div class="contact-data"><a href="https://wa.me/5567991306749?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20Peretto%20Engenharia." target="_blank" rel="noopener noreferrer"><span class="contact-icon"><svg class="icon"><use href="#i-whatsapp"></use></svg></span><span><small>WHATSAPP / TELEFONE</small><strong>(67) 99130-6749</strong></span><svg class="icon contact-arrow"><use href="#i-arrow-up-right"></use></svg></a><a href="mailto:perettoengenharias@gmail.com"><span class="contact-icon"><svg class="icon"><use href="#i-mail"></use></svg></span><span><small>E-MAIL</small><strong>perettoengenharias@gmail.com</strong></span><svg class="icon contact-arrow"><use href="#i-arrow-up-right"></use></svg></a><div class="contact-location"><span class="contact-icon"><svg class="icon"><use href="#i-map"></use></svg></span><span><small>LOCALIZAÇÃO</small><strong>Três Lagoas — MS</strong></span></div></div></div><div class="contact-form-panel reveal"><div class="form-heading"><span>VAMOS CONVERSAR?</span><h3>Solicite uma avaliação</h3><p>Preencha os dados, confira a mensagem gerada e abra a conversa no WhatsApp.</p></div><form id="quote-form"><div class="form-row"><label>Seu nome <span>*</span><input id="lead-name" name="nome" type="text" placeholder="Como podemos chamar você?" autocomplete="name" maxlength="100" required></label><label>Empresa<input id="lead-company" name="empresa" type="text" placeholder="Nome da sua empresa" autocomplete="organization" maxlength="100"></label></div><div class="form-row"><label>Seu telefone <span>*</span><input id="lead-phone" name="telefone" type="tel" placeholder="(67) 99999-9999" autocomplete="tel" inputmode="tel" maxlength="22" required></label><label>Serviço de interesse <span>*</span><select id="lead-service" name="servico" required><option value="" disabled selected>Selecione um serviço</option><option>Engenharia civil</option><option>Segurança do trabalho</option><option>Adequação NR-12</option><option>Linhas de vida e NR-35</option><option>Laudos e inspeções</option><option>Treinamentos de NRs e brigada</option><option>Manutenção industrial e predial</option><option>Prevenção contra incêndio / PCSIP</option><option>Outro serviço</option></select></label></div><label>Sobre sua necessidade<textarea id="lead-message" name="mensagem" rows="4" maxlength="1000" placeholder="Descreva brevemente o serviço desejado..."></textarea></label><button class="btn btn-accent form-submit" type="submit">1. Preparar mensagem <svg class="icon"><use href="#i-arrow-up-right"></use></svg></button><p class="form-disclaimer">Preencha os campos obrigatórios (*). Em seguida, confira a mensagem e clique em "Abrir WhatsApp". O envio só acontece quando você confirmar no WhatsApp. Seus dados não são armazenados neste site.</p><p class="form-feedback" id="form-feedback" role="status" aria-live="polite" hidden></p><div id="whatsapp-preview-section" class="whatsapp-preview-section" hidden><div class="preview-step">MENSAGEM PRONTA PARA ENVIAR</div><label for="whatsapp-preview" class="preview-label">Confira ou edite sua mensagem</label><textarea id="whatsapp-preview" rows="9" maxlength="2500" spellcheck="true" aria-describedby="preview-help"></textarea><p id="preview-help" class="preview-help">Para enviar, clique no botão abaixo. Uma conversa será aberta com a mensagem preenchida, sem envio automático.</p><a id="whatsapp-open" class="btn btn-accent whatsapp-open" href="https://wa.me/5567991306749" target="_blank" rel="noopener noreferrer">2. Abrir WhatsApp com a mensagem <svg class="icon"><use href="#i-whatsapp"></use></svg></a><button id="copy-message" class="copy-message" type="button">Copiar mensagem para colar no WhatsApp</button></div></form></div></div></section>
   </main>
-  <footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><a class="brand" href="#inicio" aria-label="Peretto Engenharia — início"><span class="brand-symbol" aria-hidden="true"><img class="brand-logo-img" src="assets/simbolo-peretto.png" alt=""></span><span class="brand-wordmark"><strong>PERETTO</strong><small>ENGENHARIA</small></span></a><p>Construindo soluções.<br>Protegendo vidas.</p></div><div class="footer-col"><h4>NAVEGAÇÃO</h4><a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#sobre">A empresa</a><a href="#portfolio">Portfólio</a></div><div class="footer-col"><h4>CONTATO</h4><a href="https://wa.me/5567991306749?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20Peretto%20Engenharia." target="_blank" rel="noopener noreferrer">(67) 99130-6749</a><a href="mailto:perettoengenharias@gmail.com">Enviar e-mail</a><a href="#contato">Solicitar orçamento</a></div><div class="footer-col footer-credentials"><h4>IDENTIFICAÇÃO</h4><span>Três Lagoas — MS</span><span>CREA-MS 69173 (responsável técnico)</span><span>CNPJ 51.188.351/0001-09</span></div></div><div class="container footer-bottom"><span>© <span id="current-year">2026</span> Peretto Engenharia. Todos os direitos reservados.</span><span>ENGENHARIA COM PROPÓSITO <span class="footer-mark">↗</span></span></div></footer>
+  <footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><a class="brand" href="#inicio" aria-label="Peretto Engenharia — início"><span class="brand-symbol" aria-hidden="true"><img class="brand-logo-img" src="assets/simbolo-peretto.png" alt=""></span><span class="brand-wordmark"><strong>PERETTO</strong><small>ENGENHARIA</small></span></a><p>Construindo soluções.<br>Protegendo vidas.</p></div><div class="footer-col"><h4>NAVEGAÇÃO</h4><a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#sobre">A empresa</a><a href="#trabalhos">Trabalhos realizados</a><a href="#portfolio">Portfólio</a></div><div class="footer-col"><h4>CONTATO</h4><a href="https://wa.me/5567991306749?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20Peretto%20Engenharia." target="_blank" rel="noopener noreferrer">(67) 99130-6749</a><a href="mailto:perettoengenharias@gmail.com">Enviar e-mail</a><a href="#contato">Solicitar orçamento</a></div><div class="footer-col footer-credentials"><h4>IDENTIFICAÇÃO</h4><span>Três Lagoas — MS</span><span>CREA-MS 69173 (responsável técnico)</span><span>CNPJ 51.188.351/0001-09</span></div></div><div class="container footer-bottom"><span>© <span id="current-year">2026</span> Peretto Engenharia. Todos os direitos reservados.</span><span>ENGENHARIA COM PROPÓSITO <span class="footer-mark">↗</span></span></div></footer>
   <a class="floating-wa" href="https://wa.me/5567991306749?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20%C3%A0%20Peretto%20Engenharia." target="_blank" rel="noopener noreferrer" aria-label="Falar com Peretto Engenharia pelo WhatsApp"><svg class="icon"><use href="#i-whatsapp"></use></svg><span>Solicitar orçamento</span></a>
 </body>
 </html>

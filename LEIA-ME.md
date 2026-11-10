@@ -1,3 +1,9 @@
+# Peretto Engenharia — Site Institucional V4.0
+
+Nova seção **Trabalhos Realizados**, com as três imagens enviadas pela empresa, ampliação em galeria, setas de navegação e layout adaptado a celular. Preserva a identidade preta e azul e o formulário de WhatsApp da versão V3.
+
+Para atualizar a Cloudflare Pages: entre no projeto existente > Create deployment / Upload assets > Production; envie o ZIP deste pacote. O arquivo `index.html` deve ficar na raiz. As fotos devem permanecer dentro de `assets/`.
+
 # Peretto Engenharia — Site Institucional V3.0
 
 ## Correção do WhatsApp (22/10/2026)

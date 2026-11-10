@@ -124,6 +124,37 @@
       }
     }
   });
+  // Galeria de trabalhos: ampliar, avançar/voltar e fechar por Escape.
+  const galleryDialog = document.getElementById('gallery-dialog');
+  const galleryImages = [
+    { src:'assets/trabalho-projeto-residencial.webp', title:'Projeto residencial em 3D', alt:'Perspectiva tridimensional de residência com telhado de telhas cerâmicas e muro frontal' },
+    { src:'assets/trabalho-acompanhamento-obra.webp', title:'Registro de obra em execução', alt:'Obra em alvenaria com pilares e equipe em campo' },
+    { src:'assets/trabalho-area-industrial.webp', title:'Atuação em instalações industriais', alt:'Galpão industrial, área operacional com cones e materiais armazenados' },
+  ];
+  let galleryIndex = 0;
+  function showGalleryImage(index) {
+    galleryIndex = (index + galleryImages.length) % galleryImages.length;
+    const item = galleryImages[galleryIndex];
+    document.getElementById('gallery-image').src = item.src;
+    document.getElementById('gallery-image').alt = item.alt;
+    document.getElementById('gallery-caption').textContent = item.title;
+    document.getElementById('gallery-counter').textContent = `${String(galleryIndex + 1).padStart(2, '0')} / 03`;
+  }
+  document.querySelectorAll('[data-gallery-index]').forEach(button => button.addEventListener('click', () => {
+    showGalleryImage(Number(button.dataset.galleryIndex));
+    if (typeof galleryDialog.showModal === 'function') galleryDialog.showModal();
+    else window.open(galleryImages[galleryIndex].src, '_blank', 'noopener');
+  }));
+  galleryDialog.querySelector('.gallery-close').addEventListener('click', () => galleryDialog.close());
+  galleryDialog.querySelector('.gallery-prev').addEventListener('click', () => showGalleryImage(galleryIndex - 1));
+  galleryDialog.querySelector('.gallery-next').addEventListener('click', () => showGalleryImage(galleryIndex + 1));
+  galleryDialog.addEventListener('click', event => { if (event.target === galleryDialog) galleryDialog.close(); });
+  document.addEventListener('keydown', event => {
+    if (!galleryDialog.open) return;
+    if (event.key === 'ArrowRight') showGalleryImage(galleryIndex + 1);
+    if (event.key === 'ArrowLeft') showGalleryImage(galleryIndex - 1);
+  });
+
   document.getElementById('current-year').textContent = new Date().getFullYear();
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const observer = new IntersectionObserver(entries => {
