@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 600" role="img" aria-labelledby="title desc">
+<title id="title">Estrutura industrial isométrica</title><desc id="desc">Representação técnica de um galpão industrial, com vigas, pilares, fundações e linhas de cotagem.</desc>
+<defs>
+  <linearGradient id="floor" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#315480" stop-opacity=".28"/><stop offset="1" stop-color="#1A4277" stop-opacity=".14"/></linearGradient>
+  <linearGradient id="roof" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4B7FBE" stop-opacity=".22"/><stop offset="1" stop-color="#83ABDC" stop-opacity=".035"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<g stroke="#4D77AD" stroke-width="1" opacity=".26" fill="none">
+ <path d="M40 438 342 563 651 373M46 393l327 134 258-153M90 468 424 267M142 495 478 290M203 521 530 317M275 550 601 345" stroke-dasharray="4 7"/>
+ <circle cx="345" cy="335" r="240" stroke-dasharray="2 16"/><circle cx="345" cy="335" r="195" stroke-dasharray="2 14"/>
+</g>
+<g stroke="#6A8CB7" stroke-width="1.5" fill="none" opacity=".4"><path d="M89 477v34M89 499h-34M613 181v-35M613 163h34M70 175V98h78M558 458h69v-41"/><circle cx="89" cy="499" r="3"/><circle cx="613" cy="163" r="3"/></g>
+<g transform="translate(0,5)">
+ <path d="m93 389 269 112 268-156-269-113z" fill="url(#floor)" stroke="#4D7DB9" stroke-width="2"/>
+ <path d="m121 377 241 100 236-137-238-101z" fill="none" stroke="#7896BE" stroke-width="1" stroke-dasharray="8 8" opacity=".7"/>
+ <!-- Front frames and columns -->
+ <g fill="none" stroke="#8AB7EE" stroke-width="4" stroke-linecap="square">
+  <path d="M118 390V219M199 424V253M279 457V289M362 501V321"/>
+  <path d="M118 219 199 253 279 289 362 321" stroke-width="3"/>
+  <path d="M118 390 199 424 279 457 362 501" stroke-width="3" opacity=".6"/>
+  <path d="M118 219 355 91 631 205 362 321"/>
+  <path d="M355 91v170M446 129v171M538 167v169M631 205v140" opacity=".8"/>
+  <path d="M118 390 355 261 631 345" opacity=".65"/>
+ </g>
+ <g stroke="#6290CB" stroke-width="2" opacity=".8" fill="none">
+  <path d="M118 219 199 424M199 253 279 457M279 289 362 501" stroke-dasharray="7 8" opacity=".4"/>
+  <path d="M199 253 355 170M279 289 446 129M362 321 538 167M446 129 631 205"/>
+  <path d="M355 91 118 219 199 253 446 129 279 289 538 167 362 321 631 205" opacity=".45"/>
+  <path d="M118 219 355 261 631 205" opacity=".3"/>
+  <path d="M199 424 446 300 631 345M279 457 538 336" opacity=".35"/>
+ </g>
+ <path d="m355 91 276 114-269 116-244-102z" fill="url(#roof)" stroke="#7EA8DC" stroke-width="1.8"/>
+ <path d="m355 91 276 114-269 116-244-102z" fill="none" stroke="#A1CBFF" stroke-width="1" opacity=".6" filter="url(#glow)"/>
+ <g stroke="#6C92C3" stroke-width="1" fill="none" opacity=".8">
+  <path d="m169 192 244 109M222 163l246 116M275 134l246 122M326 106l250 123"/>
+  <path d="M173 242 410 115M231 265 469 138M289 290 528 161" stroke-dasharray="3 6"/>
+ </g>
+ <!-- Technical door on right elevation -->
+ <path d="M521 397V296l63-34v99" fill="#1E4D8A" fill-opacity=".1" stroke="#84A7D1" stroke-width="1.8"/>
+ <path d="m522 315 61-31m-61 51 61-31m-61 52 61-31" stroke="#84A7D1" stroke-width="1" opacity=".45"/>
+ <!-- Braces -->
+ <g stroke="#7BADEA" stroke-width="1.7" opacity=".65"><path d="M118 219 199 424M199 253 118 390M279 289l83 212M362 321l-83 136"/></g>
+ <!-- Foundation pads -->
+ <g stroke="#9FC9FD" fill="#1B4070" fill-opacity=".55"><path d="m101 391 17-10 16 7-16 10zM182 425l17-10 16 7-16 10zM265 460l17-10 17 7-17 11zM345 502l17-10 17 8-17 10z" stroke-width="1.3"/></g>
+</g>
+<!-- dimensions and callouts -->
+<g stroke="#8CB1DE" fill="none" stroke-width="1" opacity=".8"><path d="M93 209 73 201v188l20 7M66 201h15M66 388h15"/><path d="M117 432 370 539M113 440v-20M365 546v-20"/><path d="M393 74 653 179M390 66l7 17M650 169l-7 17"/><path d="m492 146 74-51h62M578 355l61 24h40"/></g>
+<g font-family="monospace" fill="#96BDEE" font-size="13" letter-spacing="2"><text x="30" y="303" transform="rotate(-90 30 303)">ALT. ESTRUTURAL</text><text x="155" y="479" transform="rotate(23 155 479)">VÃO / AVALIAÇÃO TÉCNICA</text><text x="539" y="82">ESTRUTURA</text><text x="640" y="406" text-anchor="end">BASE</text></g>
+<g fill="#9DC7FA"><circle cx="493" cy="145" r="3"/><circle cx="578" cy="355" r="3"/></g>
+</svg>
